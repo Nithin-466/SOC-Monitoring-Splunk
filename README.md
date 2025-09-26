@@ -1,7 +1,8 @@
 # SOC Monitoring and Analysis using Splunk
 
 ## Project Overview
-Analyzed authentication, access, network, and firewall logs using Splunk to detect suspicious IPs, targeted ports, and common attack types.
+This project demonstrates how to analyze logs from multiple sources (Auth logs, Access logs, Wireshark logs, and Firewall logs) using **Splunk**.  
+The goal is to detect suspicious activity and visualize attack trends through dashboards.
 
 ## Tools & Data Sources
 - Splunk Enterprise / Cloud
@@ -54,3 +55,9 @@ The SOC Final Dashboard provides a clear view of network and authentication thre
 - Block or monitor suspicious IPs.
 - Apply stricter authentication policies.
 - Regularly monitor frequently targeted ports.
+  
+## Skills Learned
+-Log ingestion and parsing in Splunk
+-Building dashboards and panels
+-Detecting DoS, brute-force, and scan activity
+-Creating professional SOC reports
