@@ -23,21 +23,21 @@ The goal is to detect suspicious activity and visualize attack trends through da
 ## SPL Queries
 
 **1. Top Suspicious IPs**
-(sourcetype="Auth_task" OR sourcetype="accesslogs" OR source="wireshark.csv" OR sourcetype="firewalllogs") 
+index="main"(sourcetype="Auth_task" OR sourcetype="accesslogs" OR source="wireshark.csv" OR sourcetype="firewalllogs") 
 | stats count by src_ip 
 | sort - count 
 | head 10
 
 **2. Most Targeted Ports**
 
-(source="wireshark.csv" OR sourcetype="firewalllogs") 
+index="main"(source="wireshark.csv" OR sourcetype="firewalllogs") 
 | stats count by dst_port 
 | sort - count 
 | head 10
 
 **3. Top Attack Types**
 
-(sourcetype="Auth_task" OR sourcetype="accesslogs" OR sourcetype="firewalllogs") 
+index="main"(sourcetype="Auth_task" OR sourcetype="accesslogs" OR sourcetype="firewalllogs") 
 | stats count by msg 
 | sort - count 
 | head 10
