@@ -1,4 +1,4 @@
-# SOC Monitoring and Analysis using Splunk
+# SOC Monitoring and Log Analysis using Splunk
 
 ## Project Overview
 This project demonstrates how to analyze logs from multiple sources (Auth logs, Access logs, Wireshark logs, and Firewall logs) using **Splunk**.  
